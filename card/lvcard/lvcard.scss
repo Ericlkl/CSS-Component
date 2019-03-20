@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(1, 1) }
+    to {transform: scale(1.1, 1.1)}
+  }
+  
+  .card{
+    margin: 5rem;
+    border: 1px solid black;
+    width: 500px;
+    height: 12rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background: url("https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png") center center/cover;
+    
+    -webkit-box-shadow: 4px 2px 36px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 2px 36px 2px rgba(0,0,0,0.75);
+    box-shadow: 4px 2px 36px 2px rgba(0,0,0,0.75);
+    
+    >.card__level{
+      margin: 1rem;
+    }
+    
+    &:hover{
+      animation-name: zoom;
+      animation-duration: .5s;
+      transform: scale(1.1, 1.1);
+    }
+    
+    &__content{
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem;
+      &_titlebox{
+        align-self: flex-end;
+      }
+      
+      >.logo{
+        width: 3.5rem;
+        height: 3.5rem; 
+      }
+      
+    }
+  }

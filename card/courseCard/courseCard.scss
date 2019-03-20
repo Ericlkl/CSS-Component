@@ -1,0 +1,32 @@
+.course-card{
+    display: flex;
+    margin: 1rem;
+    padding: 0.5rem;
+    min-height: 20vh;
+    -webkit-box-shadow: 0px 10px 37px -6px rgba(130,130,130,1);
+    -moz-box-shadow: 0px 10px 37px -6px rgba(130,130,130,1);
+    box-shadow: 0px 10px 37px -6px rgba(130,130,130,1);
+    
+    &:hover{
+      transition: box-shadow 0.5s;
+      -webkit-box-shadow: 0px 10px 35px 2px rgba(130,130,130,1);
+      -moz-box-shadow: 0px 10px 35px 2px rgba(130,130,130,1);
+      box-shadow: 0px 10px 35px 2px rgba(130,130,130,1);
+    }
+    
+    &__img{
+      width: 300px;
+    }
+    
+    &__content{
+      width: 100%;
+      margin-left: 0.5rem;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &__footer{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
